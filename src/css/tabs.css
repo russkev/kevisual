@@ -1,0 +1,60 @@
+.tab {
+  --slide-time: 0.5s;
+  --slide-animation: cubic-bezier(0.000, 0.755, 0.275, 1.000);
+}
+
+.tab button {
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+  height: 50px;
+  transition: background-color 0.4s;
+  position: relative;
+}
+
+
+.tab button:hover {
+  background-color: var(--secondary-color-hover);
+}
+
+.tab > nav > div {
+  display: grid;
+  grid-template-columns: repeat(100, minmax(90px, 1fr));
+  flex-direction: row;
+  overflow: auto;
+  padding-bottom: 10px; /*Make room for scroll bar*/
+}
+
+#tab-button-active {
+  height: 3px;
+  width: 100%;
+  background-color: var(--secondary-color);
+  transition: var(--slide-time);
+  transition-timing-function: var(--slide-animation);
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
+
+#tabs-content-container {
+  display: flex;
+  overflow: hidden;
+  flex: 1 nowrap;
+  flex-direction: row-reverse;
+  transition: inherit;
+  transition-timing-function: var(--slide-animation);
+}
+
+.tab-content {
+  opacity: 0;
+  width: 100%;
+  columns: 3;
+  column-width: 200px;
+  transition: inherit;
+  transition-timing-function: var(--slide-animation);
+}
+
+ul.active {
+  opacity: 1;
+}

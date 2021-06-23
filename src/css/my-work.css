@@ -1,0 +1,97 @@
+section.my-work > div{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 90px;
+  row-gap: 60px;
+}
+
+
+
+section.my-work > div > div{
+  max-width: var(--max-column-width);
+  margin: 0 auto;
+}
+
+section.my-work > div > div > div{
+  position: relative;
+  height: 27vw;
+  max-height: 390px;
+}
+
+section.my-work div img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+section.my-work div > div img:nth-child(1) {
+  box-shadow: 5px 5px 10px var(--shadow-color);
+}
+
+section.my-work div > div img:nth-child(1).responsive {
+  width: 70%;
+}
+
+section.my-work div > div img:nth-child(1).desktop {
+  width: 60%;
+}
+
+section.my-work div img:nth-child(2) {
+  box-shadow: 20px 20px 30px var(--shadow-color);
+}
+
+section.my-work div img:nth-child(2).portrait {
+  width: 20%;
+  right: 5%;
+}
+
+section.my-work div img:nth-child(2).landscape {
+  top: 30%;
+  width: 30%;
+  right: 5%;
+}
+
+section.my-work div img:nth-child(3).landscape {
+  top: unset;
+  bottom: -5%;
+  width: 30%;
+  right: 5%;
+}
+
+section.my-work img ~ div {
+  height: 100%;
+  width: 75%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  right: 0;
+}
+
+#jinx img ~ div {
+  background: linear-gradient(111.06deg, #E3F5FF 0%, #EFE2FF 100%);
+}
+
+#gl-engine img ~ div {
+  background: linear-gradient(125.6deg, #EFE4D3 0%, #FFEEEE 100%);
+}
+
+#gl-engine img:nth-child(1) {
+  box-shadow: 5px 5px 10px rgba(149, 98, 51, 0.16);
+}
+
+#gl-engine img:nth-child(n+2) {
+  box-shadow: 20px 20px 30px rgba(149, 98, 51, 0.16);
+}
+
+#reel img ~ div {
+  background: linear-gradient(125.6deg, #DAEDFF 0%, #E2FFFD 96.88%);
+}
+
+@media screen and (max-width: 800px) {
+  section.my-work > div {
+    grid-template-columns: 1fr;
+  }
+  section.my-work > div > div > div {
+    height: 70vw;
+  }
+}

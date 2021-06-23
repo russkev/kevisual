@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/tabs.css" />
+    <link rel="stylesheet" href="css/my-work.css" />
+    <title>Kevisual</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h5>Kevisual</h5>
+      </nav>
+      <div>
+        <div id="icons">
+          <img src="media/icon_email_01.svg">
+          <img src="media/icon_github_01.svg">
+          <img src="media/icon_linkedin_01.svg">
+        </div>
+        <h1>Hi, I'm Kevin Russell</h1>
+        <h6>I develop things that look good on screens</h6>
+      </div>
+
+      </div>
+    </header>
+    <section>
+      <p>
+        I am a software developer with a passion for front end development, design, graphics, and
+        basically anything that will run on a computer and look good.
+      </p>
+      <p>
+        I have over 10 years experience in the visual effects industry, where I have focused on
+        lighting, surfacing, look development, hard surface modelling and compositing.
+      </p>
+      <p>
+        I intend to combine this experience with the skills I’ve picked studying computer science at
+        The University of Melbourne to develop great looking websites and other graphics oriented
+        applications.
+      </p>
+    </section>
+    <section>
+      <h2>My Skills</h2>
+      <div class="tab">
+        <nav>
+          <div>
+              
+            <button class="tab-button" onclick="selectTab(event, 'languages')" id="default-open">
+              Languages
+              <div id="tab-button-active"></div>
+            </button>
+            <button class="tab-button" onclick="selectTab(event, 'frameworks')">
+              Frameworks / Libraries
+            </button>
+            <button class="tab-button" onclick="selectTab(event, 'software')">Software</button>
+          </div>
+        </nav>
+        <div id="tabs-content-container">
+          <ul id="languages" class="tab-content">
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>C</li>
+            <li>C++</li>
+            <li>Python</li>
+            <li>GLSL</li>
+            <li>Java</li>
+          </ul>
+          <ul id="frameworks" class="tab-content">
+            <li>ReactJS</li>
+            <li>Django</li>
+          </ul>
+          <ul id="software" class="tab-content">
+            <li>vsCode</li>
+            <li>Figma</li>
+            <li>Adobe XD</li>
+            <li>IntelliJ</li>
+            <li>Maya</li>
+            <li>3DS Max</li>
+            <li>Katana</li>
+            <li>Nuke</li>
+            <li>Mari</li>
+            <li>VRay</li>
+            <li>Renderman RIS</li>
+            <li>Mental Ray</li>
+            <li>Corona</li>
+            <li>After Effects</li>
+            <li>Photoshop</li>
+            <li>Nuke</li>
+            <li>Substance Designer</li>
+            <li>Substance Painter</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="my-work">
+      <h2>My Work</h2>
+      <div>
+        <div id="jinx">
+          <div>
+            <img src="media/jinx_desktop_01.png" class="responsive">
+            <img src="media/jinx_mobile_01.png" class="portrait">
+            <div></div>
+          </div>
+          <h3>Jinx</h3>
+          <p>Web app for creating a personalised ePortfolio website</p>
+          <a href="#">More information</a>
+        </div>
+        <div id="gl-engine">
+          <div>
+            <img src="media/gl_engine_02.png" class="desktop">
+            <img src="media/gl_engine_01.png" class="landscape">
+            <img src="media/gl_engine_03.png" class="landscape">
+            <div></div>
+          </div>
+          <h3>GL Engine</h3>
+          <p>
+            Real time graphics engine which implements various advanced real time lighting
+            techniques.
+          </p>
+          <a href="#">More information</a>
+        </div>
+        <div id="reel">
+          <div>
+            <img src="media/reel_aladdin_01.jpg" class="desktop">
+            <img src="media/reel_gaz_leccy_01.jpg" class="landscape" >
+            <img src="media/reel_sherlock_gnomes_01.jpg" class="landscape">
+            <div></div>
+          </div>
+          <h3>3D Reel</h3>
+          <p>Various 3D animations and still images that I have worked on over the years.</p>
+          <a href="#">More information</a>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>My Contact Information</h2>
+      <p>I’d love to have a chat, the best way to contact me is via email:</p>
+    </section>
+    <script type="text/javascript" src="js/tabs.js"></script>
+  </body>
+</html>

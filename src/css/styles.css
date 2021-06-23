@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* *::before *::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --secondary-color: rgb(255, 60, 0);
+  --secondary-color-hover: rgba(255, 60, 0, 0.2);
+  --box-color: rgb(234, 248, 255);
+  --shadow-color: rgba(51, 119, 149, 0.16);
+  --text-dark-color: rgb(41, 47, 49);
+  --text-light-color: rgb(108, 124, 130);
+  --max-width: 1200px;
+  --max-column-width: 800px;
+  --max-title-width: 1000px;
+}
+
+body {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 30px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12pt;
+  color: var(--text-light-color);
+}
+
+header {
+  position: relative;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 5rem;
+  margin: 0;
+  color: var(--text-dark-color);
+}
+
+h1 > span {
+  display: inline-block;
+}
+
+h2 {
+  margin-top:80px;
+}
+
+/* Subtitle */
+h6 {
+  text-align: start;
+  font-weight: normal;
+  font-size: 1.5rem;
+  margin: 0;
+  color: var(--text-dark-color)
+}
+
+/* Kevisual link */
+h5 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+header > div {
+  max-width: var(--max-title-width);
+  margin: 60px auto 80px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+header img {
+  width: 60px;
+  padding: 15px;
+  opacity: 70%;
+}
+
+/* div.bg-box {
+  position: absolute;
+  height: 100%;
+  width: 80%;
+  right: 0px;
+  top: -20px;
+  background-color: var(--box-color);
+  z-index: -1;
+  border-radius:600px;
+} */
+
+#icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: end;
+}
+
+
+@media screen and (max-width: 1000px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  h1 {
+    font-size: 3rem;
+  }
+  header img {
+    width: 30px;
+  }
+}
