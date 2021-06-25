@@ -26,6 +26,7 @@ body {
   font-family: 'Poppins', sans-serif;
   font-size: 12pt;
   color: var(--text-light-color);
+  overflow-x: hidden;
 }
 
 h2 {
@@ -52,23 +53,6 @@ h5 {
 
 h5 > a {
   font-weight: 600;
-}
-
-#icons {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  align-self: end;
-}
-
-footer {
-  margin-top: 80px;
-  display: flex;
-  flex-direction: row;
-}
-
-footer > a:first-child {
-  margin-left: auto;
 }
 
 img {

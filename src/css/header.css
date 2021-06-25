@@ -2,6 +2,13 @@ header {
   position: relative;
 }
 
+#icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: flex-end;
+}
+
 h1 {
   font-weight: 700;
   font-size: 5rem;

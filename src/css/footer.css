@@ -1,0 +1,14 @@
+footer {
+  margin: var(--section-gap) 0;
+  display: flex;
+  flex-direction: row;
+}
+
+footer > a:first-child {
+  margin-left: auto;
+}
+
+footer > a {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
