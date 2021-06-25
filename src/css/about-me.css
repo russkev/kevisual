@@ -1,0 +1,8 @@
+section.about-me {
+  columns: 2;
+  column-width:400px;
+}
+
+section.about-me p {
+  display: inline-block;
+}

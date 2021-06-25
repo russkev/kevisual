@@ -1,19 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
 * *::before *::after {
   box-sizing: border-box;
 }
 
 :root {
-  --secondary-color: rgb(255, 60, 0);
-  --secondary-color-hover: rgba(255, 60, 0, 0.2);
-  --box-color: rgb(234, 248, 255);
+  --secondary-color: rgb(0, 179, 255);
+  --bg-secondary-color: rgb(240, 249, 253);
+  --bg-secondary-darker: rgb(221, 237, 243);
   --shadow-color: rgba(51, 119, 149, 0.16);
   --text-dark-color: rgb(41, 47, 49);
   --text-light-color: rgb(108, 124, 130);
+  --link-color: rgb(108, 137, 148);
   --max-width: 1200px;
   --max-column-width: 800px;
   --max-title-width: 1000px;
+  --section-gap: 110px;
 }
 
 body {
@@ -25,31 +28,18 @@ body {
   color: var(--text-light-color);
 }
 
-header {
-  position: relative;
-}
-
-h1 {
-  font-weight: 700;
-  font-size: 5rem;
-  margin: 0;
-  color: var(--text-dark-color);
-}
-
-h1 > span {
-  display: inline-block;
-}
-
 h2 {
-  margin-top:80px;
+  margin-top: var(--section-gap);
+  color: var(--text-dark-color);
+  font-size: 2.5rem;
+  font-weight: 500;
 }
 
-/* Subtitle */
-h6 {
-  text-align: start;
+/* My-work heading */
+h3 {
   font-weight: normal;
-  font-size: 1.5rem;
-  margin: 0;
+  font-size: 2rem;
+  margin: 20px 0;
   color: var(--text-dark-color)
 }
 
@@ -60,29 +50,9 @@ h5 {
   margin: 0;
 }
 
-header > div {
-  max-width: var(--max-title-width);
-  margin: 60px auto 80px auto;
-  display: flex;
-  flex-direction: column;
+h5 > a {
+  font-weight: 600;
 }
-
-header img {
-  width: 60px;
-  padding: 15px;
-  opacity: 70%;
-}
-
-/* div.bg-box {
-  position: absolute;
-  height: 100%;
-  width: 80%;
-  right: 0px;
-  top: -20px;
-  background-color: var(--box-color);
-  z-index: -1;
-  border-radius:600px;
-} */
 
 #icons {
   display: flex;
@@ -91,18 +61,20 @@ header img {
   align-self: end;
 }
 
-
-@media screen and (max-width: 1000px) {
-  h1 {
-    font-size: 4rem;
-  }
+footer {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: row;
 }
 
-@media screen and (max-width: 850px) {
-  h1 {
-    font-size: 3rem;
-  }
-  header img {
-    width: 30px;
-  }
+footer > a:first-child {
+  margin-left: auto;
+}
+
+img {
+  width: 100%;
+}
+
+.margin-top {
+  margin-top: var(--section-gap)
 }

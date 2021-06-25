@@ -1,0 +1,23 @@
+button, a.button {
+  display: inline-block;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-family: inherit;
+  background-color: var(--bg-secondary-color);
+  border: none;
+  color: var(--link-color);
+  font-size: 1rem;
+  padding: 8px 30px;
+  font-weight: 500;
+  transition: 0.2s;
+  width: 220px;
+  text-align: center;
+}
+
+button.clipboard {
+  margin-top: 15px;
+}
+
+button:hover, a.button:hover {
+  background-color: var(--bg-secondary-darker);
+}

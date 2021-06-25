@@ -1,0 +1,52 @@
+header {
+  position: relative;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 5rem;
+  margin: 0;
+  color: var(--text-dark-color);
+}
+
+h1 > span {
+  display: inline-block;
+}
+
+/* Subtitle */
+h6 {
+  text-align: start;
+  font-weight: normal;
+  font-size: 1.5rem;
+  margin: 0;
+  color: var(--text-dark-color);
+}
+
+
+header > div {
+  max-width: var(--max-title-width);
+  margin: 60px auto 80px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+header img {
+  width: 45px;
+  padding: 15px;
+  opacity: 70%;
+}
+
+@media screen and (max-width: 1000px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  h1 {
+    font-size: 3rem;
+  }
+  header img {
+    width: 30px;
+  }
+}

@@ -3,27 +3,35 @@
   --slide-animation: cubic-bezier(0.000, 0.755, 0.275, 1.000);
 }
 
+.tab nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 .tab button {
-  background-color: inherit;
-  border: none;
-  cursor: pointer;
-  color: inherit;
+  background-color: transparent;
+  color: var(--text-dark-color);
   height: 50px;
   transition: background-color 0.4s;
   position: relative;
+  padding: 5px 10px;
+  margin: 0;
+  width: unset;
 }
 
 
 .tab button:hover {
-  background-color: var(--secondary-color-hover);
+  background-color: var(--bg-secondary-color);
+
 }
 
 .tab > nav > div {
   display: grid;
-  grid-template-columns: repeat(100, minmax(90px, 1fr));
-  flex-direction: row;
+  grid-template-columns: repeat(3, minmax(80px, 1fr));
   overflow: auto;
   padding-bottom: 10px; /*Make room for scroll bar*/
+  max-width: 650px;
 }
 
 #tab-button-active {
@@ -35,6 +43,7 @@
   position: absolute;
   left: 0px;
   bottom: 0px;
+  z-index:1;
 }
 
 #tabs-content-container {
@@ -57,4 +66,22 @@
 
 ul.active {
   opacity: 1;
+}
+
+li {
+  line-height: 2.2rem;
+}
+
+@media screen and (max-width: 650px) {
+  .tab button {
+    font-size: 0.85rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .tab button {
+    font-size: 0.7rem;
+    padding: 5px 5px;
+  }
+
 }

@@ -1,0 +1,80 @@
+a {
+  text-decoration: none;
+  color: var(--link-color);
+  text-transform: uppercase;
+  font-weight: 500;
+  position: relative;
+}
+
+a[href*="mailto"] {
+  text-transform: lowercase;
+  display: inline-block;
+}
+
+a#bottom-email {
+  margin-right: 30px;
+}
+
+a[href*="mailto"]::after {
+  content: "";
+}
+
+a::after {
+  color:var(--link-color);
+  content: " >"
+}
+
+h5 > a::after {
+  content: ""
+}
+
+h5 > a {
+  color:var(--text-dark-color)
+}
+
+a[href*="http"]::after {
+  content: "";
+}
+
+a > div {
+  position: absolute;
+  height: 2px;
+  width: 0;
+  opacity: 0;
+  left: 50%;
+  background-color: var(--link-color);
+  transition: 0.2s;
+  transition-timing-function: ease-out;
+}
+
+h5 > a > div {
+  background-color: var(--text-dark-color);
+}
+
+a:hover div {
+  opacity: 100%;
+  width: 100%;
+  left: 0%;
+}
+
+a path {
+  fill: var(--text-light-color);
+  transition: 0.3s;
+}
+
+a:hover path {
+  fill: var(--text-dark-color)
+}
+
+a svg {
+  width: 40px;
+  height: 40px;
+  margin: 0 8px;
+}
+
+@media screen and (max-width: 600px){
+  a svg {
+    width: 30px;
+    height: 30px;
+  } 
+}
