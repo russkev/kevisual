@@ -10,7 +10,7 @@ button, a.button {
   padding: 8px 30px;
   font-weight: 500;
   transition: 0.2s;
-  width: 220px;
+  width: var(--button-width);
   text-align: center;
 }
 

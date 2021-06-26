@@ -73,9 +73,10 @@ article form {
 }
 
 article div.buttons {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, var(--button-width));
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
   gap: 30px;
 }
 
