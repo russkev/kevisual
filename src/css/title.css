@@ -28,6 +28,7 @@ div.title {
   flex-direction: row;
   margin: 0 auto;
   padding: var(--section-gap) 0;
+  flex-wrap: wrap;
 }
 
 section.title > div > svg {
