@@ -19,108 +19,111 @@
 
 <body>
   <script src="components/header/header.js"></script>
-  <article>
-    <h1>GL Engine</h1>
-    <ul class="technologies">
-      <li>C++</li>
-      <li>OpenGL</li>
-      <li>SDL</li>
-      <li>Doxygen</li>
-      <li>Sphinx</li>
-    </ul>
-    <section>
-      <p class="partial">GL Engine is a real time graphics engine I built from scratch. It was built as a way of
-        understanding how different lighting and shading algorithms work.
-      </p>
-    </section>
-    <br>
-    <div class="buttons">
-      <a class="button" href="https://github.com/russkev/opengl" target="_blank">Github Project</a>
-      <a class="button" href="https://gl-engine.readthedocs.io/en/latest/?badge=latest"
-        target="_blank">Documentation</a>
-    </div>
-    <img src="media/gl_engine/GL_Engine_wide_04.webp" class="full-width">
-    <div class="margin-top"></div>
-    <section>
-
-      <h2>Process</h2>
-      <p>This has been an ongoing project since 2017, when I was first learning C++. I found a mentor through Reddit who
-        guided me in setting up the project. With his help and the help of tutorials and documentation, I've slowly
-        built it up to a fully working library that could be used for simple real time graphics applications.</p>
-    </section>
-    <div class="two-column">
-      <img src="media/gl_engine/GL_Engine_01.webp" class="partial">
-      <section class="nested-list">
-        <h2>Rendering features</h2>
-        <p>Shading</p>
-        <ul>
-          <li>Blinn master shader with texture maps, diffuse, specularity, roughness, etc.</li>
-          <li>Normal mapping</li>
-          <li>Parallax mapping</li>
-          <li>Self illumination shader</li>
-          <li>Shadow mapping from all light types</li>
-          <li>Shadow maps from multiple lights simultaneously</li>
-          <li>Image loading for textures</li>
-          <li>2D text overlay</li>
-          <li>Cubemap environments</li>
-        </ul>
-        <p>Post effects</p>
-        <ul>
-          <li>HDR tone mapping</li>
-          <li>Deferred rendering</li>
-          <li>Screen space ambient occlusion</li>
-          <li>Glow effect</li>
-        </ul>
-      </section>
-    </div>
-    <div class="two-column reverse">
-      <img class="partial" src="media/gl_engine/GL_Engine_04.webp">
-      <section class="nested-list">
-        <h2>Scene features</h2>
-        <p>Cameras</p>
-        <ul>
-          <li>Target camera for orbiting</li>
-          <li>Free camera</li>
-          <li>Orthographic camera</li>
-        </ul>
-        <p>Lights</p>
-        <ul>
-          <li>Directional</li>
-          <li>Point</li>
-          <li>Spot</li>
-        </ul>
-        <p>Meshes</p>
-        <ul>
-          <li>Various parametric primitives</li>
-          <li>Custom OBJ loader</li>
-        </ul>
-      </section>
-    </div>
-    <section>
-      <h2>Documentation</h2>
-      <p>Documentation is generated automatically on Read The Docs when ever a new commit is pushed. The process
-        consists of two stages.</p>
-      <ol>
-        <li>Doxygen parses the documentation embedded in the C++ files</li>
-        <li>Sphinx combines the output from Doxygen with custom templates in order to generate the documentation in a
-          format that Read the Docs can make use of.</li>
-      </ol>
-    </section>
-    <img src="media/gl_engine/GL_Engine_Documentation.webp">
-    <section>
-      <h2>Future improvements</h2>
-      <ul>
-        <li>Implement physically based rendering.</li>
-        <li>Implement accurate real time fresnel calculations as described by Laurent Belcour at Siggraph2020.</li>
-        <li>Better abstraction for scene objects, to separate them out from rendering objects.</li>
+  <div>
+    <article>
+      <h1>GL Engine</h1>
+      <ul class="technologies">
+        <li>C++</li>
+        <li>OpenGL</li>
+        <li>SDL</li>
+        <li>Doxygen</li>
+        <li>Sphinx</li>
       </ul>
-    </section>
-    <div class="buttons margin-top">
-      <a class="button" href="https://github.com/russkev/opengl" target="_blank">Github Project</a>
-      <a class="button" href="https://gl-engine.readthedocs.io/en/latest/?badge=latest"
-        target="_blank">Documentation</a>
-    </div>
-  </article>
+      <section>
+        <p class="partial">GL Engine is a real time graphics engine I built from scratch. It was built as a way of
+          understanding how different lighting and shading algorithms work.
+        </p>
+      </section>
+      <br>
+      <div class="buttons">
+        <a class="button" href="https://github.com/russkev/opengl" target="_blank">Github Project</a>
+        <a class="button" href="https://gl-engine.readthedocs.io/en/latest/?badge=latest"
+          target="_blank">Documentation</a>
+      </div>
+      <img src="media/gl_engine/GL_Engine_wide_04.webp" class="full-width">
+      <div class="margin-top"></div>
+      <section>
+
+        <h2>Process</h2>
+        <p>This has been an ongoing project since 2017, when I was first learning C++. I found a mentor through Reddit
+          who
+          guided me in setting up the project. With his help and the help of tutorials and documentation, I've slowly
+          built it up to a fully working library that could be used for simple real time graphics applications.</p>
+      </section>
+      <div class="two-column">
+        <img src="media/gl_engine/GL_Engine_01.webp" class="partial">
+        <section class="nested-list">
+          <h2>Rendering features</h2>
+          <p>Shading</p>
+          <ul>
+            <li>Blinn master shader with texture maps, diffuse, specularity, roughness, etc.</li>
+            <li>Normal mapping</li>
+            <li>Parallax mapping</li>
+            <li>Self illumination shader</li>
+            <li>Shadow mapping from all light types</li>
+            <li>Shadow maps from multiple lights simultaneously</li>
+            <li>Image loading for textures</li>
+            <li>2D text overlay</li>
+            <li>Cubemap environments</li>
+          </ul>
+          <p>Post effects</p>
+          <ul>
+            <li>HDR tone mapping</li>
+            <li>Deferred rendering</li>
+            <li>Screen space ambient occlusion</li>
+            <li>Glow effect</li>
+          </ul>
+        </section>
+      </div>
+      <div class="two-column reverse">
+        <img class="partial" src="media/gl_engine/GL_Engine_04.webp">
+        <section class="nested-list">
+          <h2>Scene features</h2>
+          <p>Cameras</p>
+          <ul>
+            <li>Target camera for orbiting</li>
+            <li>Free camera</li>
+            <li>Orthographic camera</li>
+          </ul>
+          <p>Lights</p>
+          <ul>
+            <li>Directional</li>
+            <li>Point</li>
+            <li>Spot</li>
+          </ul>
+          <p>Meshes</p>
+          <ul>
+            <li>Various parametric primitives</li>
+            <li>Custom OBJ loader</li>
+          </ul>
+        </section>
+      </div>
+      <section>
+        <h2>Documentation</h2>
+        <p>Documentation is generated automatically on Read The Docs when ever a new commit is pushed. The process
+          consists of two stages.</p>
+        <ol>
+          <li>Doxygen parses the documentation embedded in the C++ files</li>
+          <li>Sphinx combines the output from Doxygen with custom templates in order to generate the documentation in a
+            format that Read the Docs can make use of.</li>
+        </ol>
+      </section>
+      <img src="media/gl_engine/GL_Engine_Documentation.webp">
+      <section>
+        <h2>Future improvements</h2>
+        <ul>
+          <li>Implement physically based rendering.</li>
+          <li>Implement accurate real time fresnel calculations as described by Laurent Belcour at Siggraph2020.</li>
+          <li>Better abstraction for scene objects, to separate them out from rendering objects.</li>
+        </ul>
+      </section>
+      <div class="buttons margin-top">
+        <a class="button" href="https://github.com/russkev/opengl" target="_blank">Github Project</a>
+        <a class="button" href="https://gl-engine.readthedocs.io/en/latest/?badge=latest"
+          target="_blank">Documentation</a>
+      </div>
+    </article>
+  </div>
   <script src="components/footer/footer.js"></script>
 </body>
 

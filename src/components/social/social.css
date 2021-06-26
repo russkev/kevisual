@@ -1,0 +1,26 @@
+div.social {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  gap: 15px;
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  justify-content: flex-end;
+  padding: 15px 0;
+}
+
+div.social a {
+  display: flex;
+  align-items: center;
+  text-transform: none;
+}
+
+div.social a div {
+  bottom: -5px;
+}
+
+div.social a:hover div {
+  left: 5%;
+}

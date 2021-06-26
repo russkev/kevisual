@@ -1,6 +1,7 @@
 section.about-me {
   columns: 2;
   column-width:400px;
+  margin-top: 30px;
 }
 
 section.about-me p {

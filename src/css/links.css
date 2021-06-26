@@ -24,31 +24,27 @@ a::after {
   content: " >"
 }
 
-h5 > a::after {
-  content: ""
+a:hover::after {
+  color: var(--link-color-hover);
 }
 
-h5 > a {
-  color:var(--text-dark-color)
+h5 > a::after {
+  content: ""
 }
 
 a[href*="http"]::after {
   content: "";
 }
 
-a > div {
+a > div.underline {
   position: absolute;
   height: 2px;
   width: 0;
   opacity: 0;
   left: 50%;
-  background-color: var(--link-color);
+  background-color: var(--link-color-hover);
   transition: 0.2s;
   transition-timing-function: ease-out;
-}
-
-h5 > a > div {
-  background-color: var(--text-dark-color);
 }
 
 a:hover div {
@@ -58,23 +54,20 @@ a:hover div {
 }
 
 a path {
-  fill: var(--text-light-color);
+  fill: var(--link-color);
   transition: 0.3s;
 }
 
+a:hover {
+  color: var(--link-color-hover)
+}
+
 a:hover path {
-  fill: var(--text-dark-color)
+  fill: var(--link-color-hover)
 }
 
 a svg {
-  width: 40px;
-  height: 40px;
+  width: 20px;
+  height: 20px;
   margin: 0 8px;
-}
-
-@media screen and (max-width: 600px){
-  a svg {
-    width: 30px;
-    height: 30px;
-  } 
 }

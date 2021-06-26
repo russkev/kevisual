@@ -1,6 +1,9 @@
 .tab {
   --slide-time: 0.5s;
   --slide-animation: cubic-bezier(0.000, 0.755, 0.275, 1.000);
+  max-width: 850px;
+  margin: 0 auto;
+  overflow-x: hidden;
 }
 
 .tab nav {
@@ -11,7 +14,7 @@
 
 .tab button {
   background-color: transparent;
-  color: var(--text-dark-color);
+  color: var(--text-primary-color);
   height: 50px;
   transition: background-color 0.4s;
   position: relative;

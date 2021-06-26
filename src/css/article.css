@@ -7,7 +7,7 @@ article section {
 }
 
 article img {
-  box-shadow: 4px 4px 20px;
+  box-shadow: 4px 4px 20px var(--shadow-color);
   margin-top: var(--section-gap);
 }
 
@@ -60,7 +60,7 @@ article ul.technologies {
 article ul.technologies li {
   list-style-type: none;
   font-weight: 600;
-  color: var(--text-dark-color);
+  color: var(--text-primary-color);
   margin-bottom: 0px;
 }
 

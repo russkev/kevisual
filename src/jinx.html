@@ -19,96 +19,100 @@
 
 <body>
   <script src="components/header/header.js"></script>
-  <article>
-
-    <h1>Jinx</h1>
-    <ul class="technologies">
-      <li>ReactJS</li>
-      <li>Django</li>
-      <li>PostgreSQL</li>
-      <li>Material-UI</li>
-      <li>Docker</li>
-      <li>Dokku</li>
-      <li>Swagger</li>
-    </ul>
-    <section>
-      <p class="partial">Jinx is a web app designed to make it easy for anyone to create their own ePortfolio web page.
-        It started as
-        part of a group project with 4 other people at university. I have since refactored a large portion of the site
-        and
-        added a lot of features myself.</p>
-    </section>
-    <br>
-    <div class="buttons">
-      <a class="button" href="https://jinxapp.work" target="_blank">Live Site</a>
-      <a class="button" href="https://github.com/russkev/jinx-it-project" target="_blank">Github Project</a>
-    </div>
-    <img src="media/jinx/jinx_desktop_03.webp">
-    <section>
-
-      <h2>Process</h2>
-      <p>We initially met with our client (a student from another subject) to discuss possible designs. From these
-        discussions,
-        we determined that the app must:</p>
-      <ul>
-        <li>Be easy to use</li>
-        <li>Allow an arbitrary number of users to create portfolios</li>
-        <li>Allow users to customise the arrangement of content</li>
-        <li>Facilitate sharing of portfolios</li>
+  <div>
+    <article>
+      <h1>Jinx</h1>
+      <ul class="technologies">
+        <li>ReactJS</li>
+        <li>Django</li>
+        <li>PostgreSQL</li>
+        <li>Material-UI</li>
+        <li>Docker</li>
+        <li>Dokku</li>
+        <li>Swagger</li>
       </ul>
-      <p>Our team employed scrum processes in order to get the job done in the time available. We had 3 week sprints and
-        a
-        standup every week (university time commitments meant we couldn’t have one every day). We used Trello to keep
-        track of
-        our product backlog.</p>
-      <p>Once the semester was over I decided to make my own fork of the project so that I could clean up some of the
-        code
-        and
-        implement some features that we didn’t have time to get to. I ended up completely refactoring large portions of
-        both the
-        backend and the frontend but was finally able to get it to a place I was happy with.</p>
-    </section>
-
-    <div class="two-column">
-      <img src="media/jinx/jinx_mobile_09.webp" class="partial mobile">
       <section>
-        <h2>Features</h2>
-        <ul>
-          <li>Multiple themes, each with custom colours, background image, spacing and fonts.</li>
-          <li>Public / private switch for user’s portfolio.</li>
-          <li>Google Design principles used throughout. Implemented with Material-UI.</li>
-          <li>All pages are completely responsive.</li>
-          <li>Continuous integration using Dokku, Digital Ocean and Netlify.</li>
-          <li>Backend API documented thoroughly documented with Swagger.</li>
-          <li>Custom link creation interface with selectable icons.</li>
-          <li>Light and dark mode for the edit page.</li>
-        </ul>
-      </section>
-    </div>
-
-    <div class="two-column reverse">
-      <img class="partial mobile" src="media/jinx/jinx_mobile_08.webp">
-      <section>
-        <h2>Testing</h2>
-        <h3>User Acceptance Testing</h3>
-        <p>We used a Google survey to conduct user acceptance testing in the final sprint. We made sure to use a good
-          mix of male
-          and female volunteers as well as a range of devices and browsers. This process was invaluable and revealed a
-          large
-          number of usability problems which we had not foreseen when using the application ourselves.</p>
-        <h3>Integration Testing</h3>
-        <p>We made use of native Django tests to conduct integration testing. For each API endpoint, we made a test
-          database
+        <p class="partial">Jinx is a web app designed to make it easy for anyone to create their own ePortfolio web
+          page.
+          It started as
+          part of a group project with 4 other people at university. I have since refactored a large portion of the site
           and
-          simulated HTTP requests before checking that the responses were what was expected.</p>
+          added a lot of features myself.</p>
       </section>
-    </div>
-    <img src="media/jinx/jinx_desktop_02.webp">
-    <div class="buttons margin-top">
-      <a class="button" href="https://jinxapp.work" target="_blank">Live Site</a>
-      <a class="button" href="https://github.com/russkev/jinx-it-project" target="_blank">Github Project</a>
-    </div>
-  </article>
+      <br>
+      <div class="buttons">
+        <a class="button" href="https://jinxapp.work" target="_blank">Live Site</a>
+        <a class="button" href="https://github.com/russkev/jinx-it-project" target="_blank">Github Project</a>
+      </div>
+      <img src="media/jinx/jinx_desktop_03.webp">
+      <section>
+
+        <h2>Process</h2>
+        <p>We initially met with our client (a student from another subject) to discuss possible designs. From these
+          discussions,
+          we determined that the app must:</p>
+        <ul>
+          <li>Be easy to use</li>
+          <li>Allow an arbitrary number of users to create portfolios</li>
+          <li>Allow users to customise the arrangement of content</li>
+          <li>Facilitate sharing of portfolios</li>
+        </ul>
+        <p>Our team employed scrum processes in order to get the job done in the time available. We had 3 week sprints
+          and
+          a
+          standup every week (university time commitments meant we couldn’t have one every day). We used Trello to keep
+          track of
+          our product backlog.</p>
+        <p>Once the semester was over I decided to make my own fork of the project so that I could clean up some of the
+          code
+          and
+          implement some features that we didn’t have time to get to. I ended up completely refactoring large portions
+          of
+          both the
+          backend and the frontend but was finally able to get it to a place I was happy with.</p>
+      </section>
+
+      <div class="two-column">
+        <img src="media/jinx/jinx_mobile_09.webp" class="partial mobile">
+        <section>
+          <h2>Features</h2>
+          <ul>
+            <li>Multiple themes, each with custom colours, background image, spacing and fonts.</li>
+            <li>Public / private switch for user’s portfolio.</li>
+            <li>Google Design principles used throughout. Implemented with Material-UI.</li>
+            <li>All pages are completely responsive.</li>
+            <li>Continuous integration using Dokku, Digital Ocean and Netlify.</li>
+            <li>Backend API documented thoroughly documented with Swagger.</li>
+            <li>Custom link creation interface with selectable icons.</li>
+            <li>Light and dark mode for the edit page.</li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="two-column reverse">
+        <img class="partial mobile" src="media/jinx/jinx_mobile_08.webp">
+        <section>
+          <h2>Testing</h2>
+          <h3>User Acceptance Testing</h3>
+          <p>We used a Google survey to conduct user acceptance testing in the final sprint. We made sure to use a good
+            mix of male
+            and female volunteers as well as a range of devices and browsers. This process was invaluable and revealed a
+            large
+            number of usability problems which we had not foreseen when using the application ourselves.</p>
+          <h3>Integration Testing</h3>
+          <p>We made use of native Django tests to conduct integration testing. For each API endpoint, we made a test
+            database
+            and
+            simulated HTTP requests before checking that the responses were what was expected.</p>
+        </section>
+      </div>
+      <img src="media/jinx/jinx_desktop_02.webp">
+      <div class="buttons margin-top">
+        <a class="button" href="https://jinxapp.work" target="_blank">Live Site</a>
+        <a class="button" href="https://github.com/russkev/jinx-it-project" target="_blank">Github Project</a>
+      </div>
+    </article>
+  </div>
   <script src="components/footer/footer.js"></script>
 </body>
 
