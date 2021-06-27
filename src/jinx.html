@@ -13,7 +13,7 @@
   <script src="components/stylesheets/stylesheets.js"></script>
 
   <!-- Descriptions -->
-  <title>Kevisual | GL Engine</title>
+  <title>Kevisual | Jinx</title>
   <script src="components/meta/meta.js"></script>
 </head>
 
@@ -41,10 +41,10 @@
       </section>
       <br>
       <div class="buttons">
-        <a class="button" href="https://jinxapp.work" target="_blank">Live Site</a>
+        <a class="primary button" href="https://jinxapp.work" target="_blank">Live Site</a>
         <a class="button" href="https://github.com/russkev/jinx-it-project" target="_blank">Github Project</a>
       </div>
-      <img src="media/jinx/jinx_desktop_03.webp">
+      <img src="media/jinx/jinx_desktop_03.webp" alt="Portfolio created with Jinx">
       <section>
 
         <h2>Process</h2>
@@ -66,31 +66,32 @@
         <p>Once the semester was over I decided to make my own fork of the project so that I could clean up some of the
           code
           and
-          implement some features that we didn’t have time to get to. I ended up completely refactoring large portions
-          of
-          both the
-          backend and the frontend but was finally able to get it to a place I was happy with.</p>
+          implement some features that we didn’t have for.</p>
       </section>
 
       <div class="two-column">
-        <img src="media/jinx/jinx_mobile_09.webp" class="partial mobile">
+        <img src="media/jinx/jinx_mobile_09.webp" class="partial mobile" alt="Edit screen on mobile">
         <section>
-          <h2>Features</h2>
+          <h2>My Contributions</h2>
           <ul>
-            <li>Multiple themes, each with custom colours, background image, spacing and fonts.</li>
-            <li>Public / private switch for user’s portfolio.</li>
-            <li>Google Design principles used throughout. Implemented with Material-UI.</li>
-            <li>All pages are completely responsive.</li>
-            <li>Continuous integration using Dokku, Digital Ocean and Netlify.</li>
-            <li>Backend API documented thoroughly documented with Swagger.</li>
-            <li>Custom link creation interface with selectable icons.</li>
-            <li>Light and dark mode for the edit page.</li>
+            <li>Backend controllers and routes for portfolio sections, pages, etc. (using RESTful API)</li>
+            <li>Swagger integration for automatic API documentation</li>
+            <li>Continuous deployment with Dokku and Digital Ocean for the backend and Netlify for the frontend</li>
+            <li>Front end design and prototyping with Figma</li>
+            <li>Implementation of Google design principles throughout, making heavy use of Material-UI</li>
+            <li>Edit page interactivity, including the ability to add sections, change section type and re-order
+              sections</li>
+            <li>Link creation interface with selectable icons</li>
+            <li>Light and dark mode switching</li>
+            <li>Portfolio theme selector, with automatic thumbnails based on theme properties</li>
+            <li>3 theme designs</li>
+            <li>Scrum master for a portion of the semester</li>
           </ul>
         </section>
       </div>
 
       <div class="two-column reverse">
-        <img class="partial mobile" src="media/jinx/jinx_mobile_08.webp">
+        <img class="partial mobile" src="media/jinx/jinx_mobile_08.webp" alt="Navigation menu on mobile">
         <section>
           <h2>Testing</h2>
           <h3>User Acceptance Testing</h3>
@@ -106,12 +107,29 @@
             simulated HTTP requests before checking that the responses were what was expected.</p>
         </section>
       </div>
-      <img src="media/jinx/jinx_desktop_02.webp">
+      <img src="media/jinx/jinx_desktop_02.webp" alt="Theme selector">
+      <section>
+        <h2>Future Improvements</h2>
+        <ul>
+          <li>Allow users to
+            download the necessary files and host them on a site like Netlify once they are happy with their portfolio</li>
+          <li>Allow fine grained control of the final look of the portfolio page</li>
+          <li>On desktop screens that are big enough, show the edit page and the final portfolio on the same page</li>
+          <li>Implement better SEO and accessibility features</li>
+        </ul>
+      </section>
       <div class="buttons margin-top">
-        <a class="button" href="https://jinxapp.work" target="_blank">Live Site</a>
+        <a class="primary button" href="https://jinxapp.work" target="_blank">Live Site</a>
         <a class="button" href="https://github.com/russkev/jinx-it-project" target="_blank">Github Project</a>
       </div>
     </article>
+    <section class="my-work">
+      <h2>Other Projects</h2>
+      <div>
+        <script src="components/project_cards/gl_engine_card.js"></script>
+        <script src="components/project_cards/reel_card.js"></script>
+      </div>
+    </section>
   </div>
   <script src="components/footer/footer.js"></script>
 </body>

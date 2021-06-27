@@ -34,7 +34,7 @@
   grid-template-columns: repeat(3, minmax(80px, 1fr));
   overflow: auto;
   padding-bottom: 10px; /*Make room for scroll bar*/
-  max-width: 650px;
+  max-width: 660px;
 }
 
 #tab-button-active {
@@ -59,7 +59,7 @@
 }
 
 .tab-content {
-  opacity: 0;
+  opacity: 100%;
   width: 100%;
   columns: 3;
   column-width: 200px;

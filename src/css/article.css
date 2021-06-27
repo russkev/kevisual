@@ -9,6 +9,7 @@ article section {
 article img {
   box-shadow: 4px 4px 20px var(--shadow-color);
   margin-top: var(--section-gap);
+  width: 100%;
 }
 
 article .partial {
@@ -50,7 +51,7 @@ article section.nested-list p {
 }
 
 article section.nested-list li {
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 
 article ul.technologies {
@@ -62,10 +63,31 @@ article ul.technologies li {
   font-weight: 600;
   color: var(--text-primary-color);
   margin-bottom: 0px;
+  line-height: unset;
 }
 
 article ul li, article ol li {
   margin-bottom: 15px;
+}
+
+article dl {
+  columns: 2;
+  column-width: 400px;
+  margin-left: 25px;
+}
+
+article dd {
+  font-size:10pt;
+  color: var(--text-secondary-color);
+}
+
+article dt {
+  margin-top: 15px;
+  text-indent: -25px;
+}
+
+article dt::first-line {
+  text-indent: 0;
 }
 
 article form {
@@ -73,11 +95,16 @@ article form {
 }
 
 article div.buttons {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, var(--button-width));
-  grid-column-gap: 30px;
-  grid-row-gap: 30px;
-  gap: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: -30px;
+}
+
+article div.buttons button, article div.buttons a {
+  margin: 0 15px;
+  margin-bottom: 30px;
 }
 
 article div.two-column {
@@ -88,6 +115,16 @@ article div.two-column {
   column-gap: 30px;
   row-gap: var(--section-gap);
   margin-top: var(--section-gap);
+}
+
+article div.one-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+article div.one-column > img.partial {
+  max-width: 700px;
 }
 
 article div.two-column h2 {
@@ -118,7 +155,13 @@ article section.video div {
   position: relative;
 }
 
-article section.video iframe {
+article div.tab-content.video {
+  padding: 0;
+  padding-top: calc(56.25%/3);
+  position: relative
+}
+
+article section.video iframe, article div.video iframe {
   position: absolute;
   top: 0;
   left: 0;

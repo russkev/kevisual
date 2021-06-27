@@ -15,11 +15,13 @@ section.my-work div img {
   object-position: center;
 }
 
+/* Thumbnail */
 section.my-work div.thumbnail {
   position: relative;
   transition-duration: 0.5s;
 }
 
+/* Thumbnail overlay */
 section.my-work div.thumbnail div {
   position: absolute;
   background-color: var(--transparent-primary-color);
@@ -30,12 +32,15 @@ section.my-work div.thumbnail div {
   align-items: center;
   opacity: 0;
   transition-duration: inherit;
+  z-index: 2;
 }
 
-section.my-work div.thumbnail div:hover {
+/* Thumbnail overlay hover */
+section.my-work div.thumbnail *:hover {
   opacity: 100;
 }
 
+/* Thumbnail hover */
 section.my-work div.thumbnail:hover {
   transform: scale(1.1);
 }

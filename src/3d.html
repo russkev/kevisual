@@ -11,9 +11,10 @@
 
   <!-- Stylesheets -->
   <script src="components/stylesheets/stylesheets.js"></script>
+  <link rel="stylesheet" href="css/tabs.css" />
 
   <!-- Descriptions -->
-  <title>Kevisual | GL Engine</title>
+  <title>Kevisual | 3D</title>
   <script src="components/meta/meta.js"></script>
 </head>
 
@@ -35,20 +36,101 @@
         <li>Photoshop</li>
       </ul>
       <section>
-        <p class="partial">I started working in 2007 as a generalist but slowly started shifting towards lighting,
-          surfacing and rendering. Below is a reel of various projects I've had the opportunity to work on.</p>
+        <p class="fade-in partial">I started working in 2007 as a generalist but slowly started shifting towards
+          lighting,
+          surfacing and rendering. Below is a reel of selected projects that I've contributed to.</p>
       </section>
       <section class="video margin-top">
-
         <div>
           <iframe src="https://player.vimeo.com/video/369241326" frameborder="0"
             allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
         </div>
-        <script src="https://player.vimeo.com/api/player.js"></script>
+      </section>
+      <section>
+        <h2>My Contributions</h2>
+        <dl>
+          <dt>01: Lighting (Abu and Iago)</dt>
+          <dd>Aladdin (feature film)</dd>
+          <dd>One Of Us</dd>
+
+          <dt>02: Set dressing (grass, trees, rocks, etc.)</dt>
+          <dd>The Lion King (feature film)</dd>
+          <dd>MPC</dd>
+
+          <dt>03 - 06: Look development (environment), lighting (all)</dt>
+          <dd>Smart Meter - Gaz and Leccy: Hairdryer (television commercial)</dd>
+          <dd>Picasso Pictures</dd>
+
+          <dt>07: Lighting, rigging, look development, texturing, rendering (tree house)</dt>
+          <dd>The Lucky One (feature film)</dd>
+          <dd>Kojo</dd>
+
+          <dt>08: Lighting</dt>
+          <dd>Jaguar - EV (brochure still)</dd>
+          <dd>Framestore</dd>
+
+          <dt>09: Lighting, look development</dt>
+          <dd>Mitsubishi - Challenger (brochure still)</dd>
+          <dd>Kojo</dd>
+
+          <dt>10: Lighting(cows)</dt>
+          <dd>Watchment (television series)</dd>
+          <dd>Outpost VFX</dd>
+
+          <dt>11: Lighting, compositing</dt>
+          <dd>Sherlock Gnomes (feature film)</dd>
+          <dd>Mikros</dd>
+
+          <dt>12 - 15: Modelling, set dressing (ship details), particle system, matte painting, compositing</dt>
+          <dd>Passengers (feature film)</dd>
+          <dd>MPC</dd>
+
+          <dt>16: Look development, lighting, rendering (glass and juice)</dt>
+          <dd>Tropicana - Little Glass (television commercial)</dd>
+          <dd>Picasso Pictures</dd>
+
+          <dt></dt>
+        </dl>
+      </section>
+      <section>
+        <h2>More Reels</h2>
+        <div class="tab">
+          <nav>
+            <div>
+              <button class="tab-button" onclick="selectTab(event, 'architecture')" id="default-open">
+                Architecture
+                <div id="tab-button-active"></div>
+              </button>
+              <button class="tab-button" onclick="selectTab(event, 'automotive')">
+                Automotive
+              </button>
+              <button class="tab-button" onclick="selectTab(event, 'assets')">
+                Assets
+              </button>
+            </div>
+          </nav>
+          <div id="tabs-content-container">
+            <div id="architecture" class="tab-content video">
+              <iframe src="https://player.vimeo.com/video/298878187" frameborder="0"
+                allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="AssetArtistReel"></iframe>
+            </div>
+            <div id="automotive" class="tab-content video">
+              <iframe src="https://player.vimeo.com/video/134076160" frameborder="0"
+                allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="AssetArtistReel"></iframe>
+            </div>
+            <div id="assets" class="tab-content video">
+              <iframe src="https://player.vimeo.com/video/371999100" frameborder="0"
+                allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="AssetArtistReel"></iframe>
+            </div>
+          </div>
+        </div>
       </section>
     </article>
   </div>
   <script src="components/footer/footer.js"></script>
+  <script type="text/javascript" src="js/tabs.js"></script>
+  <script src="https://player.vimeo.com/api/player.js"></script>
+
 </body>
 
 </html>

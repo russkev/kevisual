@@ -39,6 +39,12 @@ body > div, div.container, nav.container {
   padding: 0 30px;
 }
 
+@media screen and (max-width: 700px) {
+  body > div, div.container, nav.container {
+    padding: 0 10px;
+  }
+}
+
 h2 {
   margin-top: var(--section-gap);
   font-size: 2.5rem;
@@ -50,6 +56,7 @@ h3 {
   font-weight: normal;
   font-size: 2rem;
   margin: 20px 0;
+  margin-top: 5px;
 }
 
 /* Kevisual link */
@@ -64,14 +71,82 @@ h5 > a {
   font-weight: 600;
 }
 
-p {
+p, li {
   color: var(--text-secondary-color)
 }
 
-img {
-  width: 100%;
-}
 
 .margin-top {
   margin-top: var(--section-gap)
+}
+
+.bounce-in, h1, h2, h3, h6, ul.technologies {
+  animation-name: verticalBounceAnimation;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.fade-right {
+  animation-name: fadeRightAnimation;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.fade-in, img {
+  animation-name: fadeInAnimation;
+  animation-duration: 0.7s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  opacity: 0
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0%;
+    animation-timing-function: ease-out;
+  }
+  to {
+    opacity: 100%
+  }
+}
+
+@keyframes fadeRightAnimation {
+  from {
+    opacity: 0%;
+    transform: translateX(-200px);
+  }
+  to {
+    opacity: 100%;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes verticalBounceAnimation {
+  from {
+    transform: translateY(-50px) scale(97%);
+    opacity: 0%;
+    animation-timing-function: ease-in;
+  }
+  25% {
+    transform: translateY(0px) scale(100%);
+    animation-timing-function: ease-out;
+  }
+  35% {
+    transform: translateY(-8px);
+    animation-timing-function: ease-in;
+  }
+  45% {
+    transform: translateY(0px);
+    animation-timing-function: ease-out;
+    opacity: 100%;
+  }
+
+  to {
+    transform: translateY(0px);
+    opacity: 100%;
+  }
 }
