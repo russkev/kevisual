@@ -1,12 +1,14 @@
-document.write(
-  '\
+document.write('\
 <div id="jinx">\
   <a href="/jinx" class="thumbnail">\
     <div class="thumbnail">\
       <div>\
         More information >\
       </div>\
-      <img src="media/jinx_thumbnail.webp" alt="Jinx edit page on desktop and mobile"/>\
+      <picture>\
+        <source type="image/webp" srcset="media/jinx_thumbnail.webp">\
+        <img src="media/jinx_thumbnail.png" alt="Jinx edit page on desktop and mobile"/>\
+      </picture>\
     </div>\
   </a>\
   <h3>Jinx</h3>\
@@ -15,5 +17,4 @@ document.write(
     <div class="underline"></div>\
   </a>\
 </div>\
-'
-);
+');

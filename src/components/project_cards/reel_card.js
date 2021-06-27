@@ -1,12 +1,14 @@
-document.write(
-  '\
+document.write('\
 <div id="reel">\
   <a href="/3d" class="thumbnail">\
     <div class="thumbnail">\
       <div>\
         More information >\
       </div>\
-      <img src="media/reel_thumbnail.webp" alt="Screenshots of reel at various points in time"/>\
+      <picture>\
+        <source type="image/webp" srcset="media/reel_thumbnail.webp">\
+        <img src="media/reel_thumbnail.png" alt="Screenshots of reel at various points in time"/>\
+      </picture>\
     </div>\
   </a>\
   <h3>3D Reel</h3>\
@@ -15,5 +17,4 @@ document.write(
     <div class="underline"></div>\
   </a>\
 </div>\
-'
-);
+');

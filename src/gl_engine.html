@@ -40,9 +40,15 @@
         <a class="button" href="https://gl-engine.readthedocs.io/en/latest/?badge=latest"
           target="_blank">Documentation</a>
       </div>
-      <img src="media/gl_engine/GL_Engine_wide_04.webp" class="full-width" alt="Shader ball with normal and specular maps">
-      <div class="margin-top"></div>
-      <section>
+      <div class="full-width">
+        <picture>
+          <source type="image/webp" srcset="media/gl_engine/GL_Engine_wide_04.webp">
+          <img src="media/gl_engine/GL_Engine_wide_04.jpg" class="full-width"
+            alt="Shader ball with normal and specular maps">
+        </picture>
+      </div>
+      <!-- <div class="margin-top"></div> -->
+      <section class="margin-top">
 
         <h2>Process</h2>
         <p>This has been an ongoing project since 2017, when I was first learning C++. I found a mentor through Reddit
@@ -51,7 +57,10 @@
           built it up to a fully working library that could be used for simple real time graphics applications.</p>
       </section>
       <div class="two-column">
-        <img src="media/gl_engine/GL_Engine_01.webp" class="partial" alt="Shader ball with roughness map">
+        <picture>
+          <source type="image/webp" srcset="media/gl_engine/GL_Engine_01.webp">
+          <img src="media/gl_engine/GL_Engine_01.jpg" class="partial" alt="Shader ball with roughness map">
+        </picture>
         <section class="nested-list">
           <h2>Rendering Features</h2>
           <p>Shading</p>
@@ -76,7 +85,10 @@
         </section>
       </div>
       <div class="two-column reverse">
-        <img class="partial" src="media/gl_engine/GL_Engine_04.webp" alt="Shader ball with parallax map">
+        <picture>
+          <source type="image/webp" srcset="media/gl_engine/GL_Engine_04.webp">
+          <img class="partial" src="media/gl_engine/GL_Engine_04.jpg" alt="Shader ball with parallax map">
+        </picture>
         <section class="nested-list">
           <h2>Scene Features</h2>
           <p>Cameras</p>
@@ -109,12 +121,17 @@
         </ol>
       </section>
       <div class="one-column">
-        <img src="media/gl_engine/GL_Engine_Documentation.webp" class="partial" alt="Documentation screenshot">
+        <picture>
+          <source type="image/webp" srcset="media/gl_engine/GL_Engine_Documentation.webp">
+          <img src="media/gl_engine/GL_Engine_Documentation.jpg" class="partial" alt="Documentation screenshot">
+        </picture>
       </div>
       <section>
         <h2>Future Improvements</h2>
         <ul>
-          <li>Currently the main blinn shader is hard coded in fragment and vertex shader files. In the future I want to create them dynamically so that only the requested features are included in any particular shader instance.</li>
+          <li>Currently the main blinn shader is hard coded in fragment and vertex shader files. In the future I want to
+            create them dynamically so that only the requested features are included in any particular shader instance.
+          </li>
           <li>Implement physically based rendering.</li>
           <li>Implement accurate real time fresnel calculations as described by Laurent Belcour at Siggraph2020.</li>
           <li>Better abstraction for scene objects, to separate them out from rendering objects.</li>
