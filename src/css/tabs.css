@@ -60,7 +60,7 @@
 }
 
 .tab-content {
-  opacity: 100%;
+  opacity: 1;
   width: 100%;
   columns: 3;
   column-width: 200px;

@@ -40,7 +40,7 @@ a > div.underline {
   position: absolute;
   height: 2px;
   width: 0;
-  opacity: 0;
+  opacity: 1;
   left: 50%;
   background-color: var(--link-color-hover);
   transition: 0.2s;
@@ -48,7 +48,7 @@ a > div.underline {
 }
 
 a:hover div {
-  opacity: 100%;
+  opacity: 1;
   width: 100%;
   left: 0%;
 }

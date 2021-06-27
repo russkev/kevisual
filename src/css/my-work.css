@@ -37,7 +37,7 @@ section.my-work div.thumbnail div {
 
 /* Thumbnail overlay hover */
 section.my-work div.thumbnail *:hover {
-  opacity: 100;
+  opacity: 1;
 }
 
 /* Thumbnail hover */

@@ -106,21 +106,21 @@ p, li {
 
 @keyframes fadeInAnimation {
   from {
-    opacity: 0%;
+    opacity: 0;
     animation-timing-function: ease-out;
   }
   to {
-    opacity: 100%
+    opacity: 1;
   }
 }
 
 @keyframes fadeRightAnimation {
   from {
-    opacity: 0%;
+    opacity: 0;
     transform: translateX(-200px);
   }
   to {
-    opacity: 100%;
+    opacity: 1;
     transform: translateX(0px);
   }
 }
@@ -128,7 +128,7 @@ p, li {
 @keyframes verticalBounceAnimation {
   from {
     transform: translateY(-50px) scale(97%);
-    opacity: 0%;
+    opacity: 0;
     animation-timing-function: ease-in;
   }
   25% {
@@ -142,11 +142,11 @@ p, li {
   45% {
     transform: translateY(0px);
     animation-timing-function: ease-out;
-    opacity: 100%;
+    opacity: 1;
   }
 
   to {
     transform: translateY(0px);
-    opacity: 100%;
+    opacity: 1;
   }
 }
