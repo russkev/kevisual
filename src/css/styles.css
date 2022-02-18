@@ -81,8 +81,8 @@ p, li {
 }
 
 .bounce-in, h1, h2, h3, h6, ul.technologies {
-  animation-name: verticalBounceAnimation;
-  animation-duration: 1s;
+  animation-name: fadeDownAnimation;
+  animation-duration: 0.5s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   opacity: 0;
@@ -125,26 +125,12 @@ p, li {
   }
 }
 
-@keyframes verticalBounceAnimation {
+@keyframes fadeDownAnimation {
   from {
     transform: translateY(-50px) scale(97%);
     opacity: 0;
-    animation-timing-function: ease-in;
-  }
-  25% {
-    transform: translateY(0px) scale(100%);
     animation-timing-function: ease-out;
   }
-  35% {
-    transform: translateY(-8px);
-    animation-timing-function: ease-in;
-  }
-  45% {
-    transform: translateY(0px);
-    animation-timing-function: ease-out;
-    opacity: 1;
-  }
-
   to {
     transform: translateY(0px);
     opacity: 1;

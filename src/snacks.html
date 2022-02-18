@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Favicons -->
+  <script src="components/favicons/favicons.js"></script>
+
+  <!-- Stylesheets -->
+  <script src="components/stylesheets/stylesheets.js"></script>
+
+  <!-- Descriptions -->
+  <title>Kevisual | Snacks in a Van</title>
+  <script src="components/meta/meta.js"></script>
+</head>
+
+<body>
+  <script src="components/header/header.js"></script>
+  <div>
+    <article>
+      <h1>Snacks in a Van</h1>
+      <ul class="technologies">
+        <li>ReactJS</li>
+        <li>Express</li>
+        <li>MongoDB</li>
+      </ul>
+      <section>
+        <p class="partial">
+          Snacks in a Van is a website for a mock food truck company. It allows customers to find a van, make an order
+          and vendors to handle those orders.
+
+          It was originally a university group project. After project completion, I gave it a complete design overhaul
+          and refactored a lot of the functionality.
+        </p>
+      </section>
+      <br>
+      <div class="buttons">
+        <a class="primary button" href="https://snacks-in-a-van.netlify.app/" target="_blank">Live Site</a>
+        <a class="button" href="https://github.com/russkev/snacksinavan" target="_blank">Github Project</a>
+      </div>
+      <picture>
+        <source type="image/webp" srcset="media/snacks/snacks_desktop_02.webp">
+        <img src="media/snacks/snacks_desktop_02.png" alt="Vendor orders page">
+      </picture>
+      <section>
+
+        <h2>Requirements</h2>
+        <p>The brief we were given outlined several important features required in the app:</p>
+        <ul>
+          <li>Customer should be able to find nearest van</li>
+          <li>Customer should be able to select from a specific menu (the same one for all vans)</li>
+          <li>Upon making an order, it should become visible to the vendor</li>
+          <li>Customers should be able to change their order after making it</li>
+          <li>Customers should be able to use the site on any device, vendors are expected to use an iPad</li>
+        </ul>
+      </section>
+
+      <div class="two-column">
+        <picture>
+          <source type="image/webp" srcset="media/snacks/snacks_mobile_02.webp">
+          <img src="media/snacks/snacks_mobile_02.webp" class="partial mobile" alt="Edit screen on mobile">
+        </picture>
+        <section>
+          <h2>My Contributions</h2>
+          <ul>
+            <li>Design and styling using CSS only (no theme/component library used) </li>
+            <li>Backend and frontend socket API implementation for instant feedback of orders</li>
+            <li>Complete authentication system using JWT tokens and React Router</li>
+            <li>2 way snack category selector ('drinks' / 'food' category changes based on scroll and button click)</li>
+            <li>Automatic login popup and redirection based on logged in status and page</li>
+            <li>Vendor order information cards with colour "urgency" indicator</li>
+            <li>Snackbar component</li>
+            <li>Pagination component</li>
+            <li>Google Maps integration with react-google-maps module</li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="two-column reverse">
+        <picture>
+          <source type="image/webp" srcset="media/snacks/snacks_mobile_03.webp">
+          <img class="partial mobile" src="media/snacks/snacks_mobile_03.webp" alt="Navigation menu on mobile">
+        </picture>
+        <section>
+          <h2>Future Improvements</h2>
+          <ul>
+            <li>Proper payment system using Stripe</li>
+            <li>More menu items like size and milk type for coffees</li>
+            <li>More vendor control, like the ability to inform customers if certain items are unavailable</li>
+          </ul>
+        </section>
+      </div>
+      <picture>
+        <source type="image/webp" srcset="media/snacks/snacks_desktop_01.webp">
+        <img src="media/snacks/snacks_desktop_01.webp" alt="Theme selector">
+      </picture>
+
+      <div class="buttons margin-top">
+        <a class="primary button" href="https://snacks-in-a-van.netlify.app/" target="_blank">Live Site</a>
+        <a class="button" href="https://github.com/russkev/snacksinavan" target="_blank">Github Project</a>
+      </div>
+    </article>
+    <section class="my-work">
+      <h2>Other Projects</h2>
+      <div>
+        <script src="components/project_cards/jinx_card.js"></script>
+        <script src="components/project_cards/gl_engine_card.js"></script>
+      </div>
+    </section>
+  </div>
+  <script src="components/footer/footer.js"></script>
+</body>
+
+</html>

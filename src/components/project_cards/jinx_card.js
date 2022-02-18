@@ -12,9 +12,9 @@ document.write('\
     </div>\
   </a>\
   <h3>Jinx</h3>\
-  <p>Web app for creating a personalised ePortfolio website</p>\
+  <p>Fullstack web app for creating a personalised ePortfolio website</p>\
   <a href="/jinx">More information\
     <div class="underline"></div>\
   </a>\
 </div>\
-');
+\n');
