@@ -12,7 +12,10 @@ document.write('\
     </div>\
   </a>\
   <h3>Jinx</h3>\
-  <p>Fullstack web app for creating a personalised ePortfolio website</p>\
+  <p>\
+    Full stack web app for creating a personalised ePortfolio website. \
+    Includes multiple themes and customisable sections.\
+  </p>\
   <a href="/jinx">More information\
     <div class="underline"></div>\
   </a>\
